@@ -1,3 +1,11 @@
+import MainHeader from "./MainHeader";
+import MobileHeader from "./MobileHeader";
+
 export default function Header() {
-  return <></>;
+  return (
+    <>
+      <MainHeader />
+      <MobileHeader />
+    </>
+  );
 }

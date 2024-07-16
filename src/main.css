@@ -6,66 +6,91 @@ html {
   scroll-behavior: smooth;
 }
 
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@layer base {
+  @font-face {
+    font-family: "Roboto";
+    font-weight: 300;
+    src: url("./shared/assets/fonts/Roboto-Thin.ttf");
+  }
+}
 
+@layer base {
+  @font-face {
+    font-family: "Roboto";
+    font-weight: 400;
+    src: url("./shared/assets/fonts/Roboto-Regular.ttf");
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: "Roboto";
+    font-weight: 500;
+    src: url("./shared/assets/fonts/Roboto-Medium.ttf");
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: "Roboto";
+    font-weight: 700;
+    src: url("./shared/assets/fonts/Roboto-Bold.ttf");
+  }
+}
+
+:root {
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #0f172a;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
+  background-color: #0f0714;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  font-family: "Roboto", sans-serif;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+/* Customize the width of the scrollbar */
+::-webkit-scrollbar {
+  width: 0.5rem;
+  overflow: hidden;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-height: 100vh;
+/* Style for the scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: #0f0714;
+  overflow: hidden;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #151f36;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+/* Style for the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #cb1e68;
+  overflow: hidden;
+  border-radius: 0.5rem;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* Style for the scrollbar buttons */
+::-webkit-scrollbar-button {
+  background-color: #cb1e68;
+  height: 0.4rem; /* Adjust the height to match the scrollbar width */
+  width: 0.4rem;
+  border-radius: 2px; /* Optional: Add rounded corners */
+}
+
+/* Up arrow */
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23cb1e68" width="20" viewBox="0 0 24 24"><path d="M7 14l5-5 5 5H7z"/></svg>') no-repeat center;
+}
+
+/* Down arrow */
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23cb1e68" width="20" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5H7z"/></svg>') no-repeat center;
+}
+
+/* Left arrow */
+::-webkit-scrollbar-button:single-button:horizontal:decrement {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23cb1e68" width="20" viewBox="0 0 24 24"><path d="M14 7l-5 5 5 5V7z"/></svg>') no-repeat center;
+}
+
+/* Right arrow */
+::-webkit-scrollbar-button:single-button:horizontal:increment {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23cb1e68" width="20" viewBox="0 0 24 24"><path d="M10 7l5 5-5 5V7z"/></svg>') no-repeat center;
 }
