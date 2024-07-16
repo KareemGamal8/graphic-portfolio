@@ -8,6 +8,14 @@ html {
 
 @layer base {
   @font-face {
+    font-family: "Edu AU VIC WA NT Hand";
+    font-weight: 300;
+    src: url("./shared/assets/fonts/EduAUVICWANTHand-VariableFont_wght.ttf");
+  }
+}
+
+@layer base {
+  @font-face {
     font-family: "Roboto";
     font-weight: 300;
     src: url("./shared/assets/fonts/Roboto-Thin.ttf");
@@ -77,20 +85,24 @@ html {
 
 /* Up arrow */
 ::-webkit-scrollbar-button:single-button:vertical:decrement {
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23cb1e68" width="20" viewBox="0 0 24 24"><path d="M7 14l5-5 5 5H7z"/></svg>') no-repeat center;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23cb1e68" width="20" viewBox="0 0 24 24"><path d="M7 14l5-5 5 5H7z"/></svg>')
+    no-repeat center;
 }
 
 /* Down arrow */
 ::-webkit-scrollbar-button:single-button:vertical:increment {
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23cb1e68" width="20" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5H7z"/></svg>') no-repeat center;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23cb1e68" width="20" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5H7z"/></svg>')
+    no-repeat center;
 }
 
 /* Left arrow */
 ::-webkit-scrollbar-button:single-button:horizontal:decrement {
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23cb1e68" width="20" viewBox="0 0 24 24"><path d="M14 7l-5 5 5 5V7z"/></svg>') no-repeat center;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23cb1e68" width="20" viewBox="0 0 24 24"><path d="M14 7l-5 5 5 5V7z"/></svg>')
+    no-repeat center;
 }
 
 /* Right arrow */
 ::-webkit-scrollbar-button:single-button:horizontal:increment {
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23cb1e68" width="20" viewBox="0 0 24 24"><path d="M10 7l5 5-5 5V7z"/></svg>') no-repeat center;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23cb1e68" width="20" viewBox="0 0 24 24"><path d="M10 7l5 5-5 5V7z"/></svg>')
+    no-repeat center;
 }
