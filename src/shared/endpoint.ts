@@ -1,8 +1,6 @@
 import { RunTimeDriver } from "@mongez/cache";
 import Endpoint, { setCurrentEndpoint } from "@mongez/http";
-import { navigateTo } from "@mongez/react-router";
 import user from "apps/front-office/account/user";
-import URLS from "apps/front-office/utils/urls";
 import { AxiosResponse } from "axios";
 import { apiBaseUrl, apiKey, apiOS } from "./flags";
 
@@ -47,10 +45,10 @@ endpointEvents.onError(response => {
     response.data = response.data.data;
   }
 
-  if (response.status === 401) {
-    user.logout();
-    navigateTo(URLS.auth.login);
-  }
+  // if (response.status === 401) {
+  //   user.logout();
+  //   navigateTo(URLS.auth.login);
+  // }
 });
 
 setCurrentEndpoint(endpoint);

@@ -7,6 +7,14 @@ const URLS = {
   services: "/services",
   portfolio: "/portfolio",
   contactUs: "/contact-us",
+  auth: {
+    login: "/login",
+    forgetPassword: "/forget-password",
+    resetPassword: "/rest-password",
+    register: "/register",
+    verifyForgetPassword: "/verify-password",
+    registerVerify: "/register/verify",
+  },
 };
 
 export default URLS;
