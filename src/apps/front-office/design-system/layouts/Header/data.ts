@@ -1,4 +1,5 @@
 import {
+  IconBrandBehance,
   IconBrandFacebook,
   IconBrandInstagram,
   IconBrandLinkedin,
@@ -40,5 +41,9 @@ export const headerSocialLinks = [
   {
     Icon: IconBrandLinkedin,
     url: "https://www.linkedin.com/in/hisham-ashraf-8894b0222/",
+  },
+  {
+    Icon: IconBrandBehance,
+    url: "https://www.behance.net/Hisham19",
   },
 ];

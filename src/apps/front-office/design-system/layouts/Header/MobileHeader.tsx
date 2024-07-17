@@ -11,7 +11,7 @@ export default function MobileHeader() {
       <div>
         <div>
           <div className="container">
-            <div className="flex justify-between py-2 items-center">
+            <div className="flex justify-between py-2 items-center text-white">
               <Link to={URLS.home}>
                 <img src={logo} alt="logo" width={120} />
               </Link>

@@ -20,7 +20,7 @@ export default function MainHeader() {
                 <Link
                   key={index}
                   to={link.route}
-                  className={`relative text-sm font-medium pb-1 after:h-[1px] after:bg-violet-red after:absolute after:w-0  after:bottom-0 after:left-0 ${route !== link.route ? "hover:after:w-[50%] after:transition-all after:duration-300" : "after:w-[50%]"}`}>
+                  className={`relative text-sm font-medium pb-1 after:h-[1px] text-white after:bg-violet-red after:absolute after:w-0  after:bottom-0 after:left-0 ${route !== link.route ? "hover:after:w-[50%] after:transition-all after:duration-300" : "after:w-[50%]"}`}>
                   {link.text}
                 </Link>
               ))}
@@ -30,7 +30,7 @@ export default function MainHeader() {
                   const { Icon, url } = link;
                   return (
                     <Link key={index} href={url} target="_blank">
-                      <Icon className="hover:text-violet-red  hover:transition-all hover:duration-300" />
+                      <Icon className="hover:text-violet-red text-white hover:transition-all hover:duration-300" />
                     </Link>
                   );
                 })}

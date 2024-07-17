@@ -13,7 +13,7 @@ export default function HeaderDrawerLinks() {
         opened && "grid-rows-[1fr]",
       )}>
       <div className="transition-all overflow-hidden">
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center text-white">
           {linksData.map((link, index) => (
             <Link
               key={index}
