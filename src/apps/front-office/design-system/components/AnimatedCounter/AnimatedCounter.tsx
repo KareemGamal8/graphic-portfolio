@@ -47,7 +47,10 @@ const AnimatedCounter = ({
       <span className="text-violet-red uppercase font-bold text-lg">
         {text}
       </span>
-      <span className="text-5xl">+{formatNumber(count)} </span>
+      <div className="flex gap-1 items-start">
+        <span className="text-3xl">+</span>
+        <span className="text-5xl">{formatNumber(count)}</span>
+      </div>
     </div>
   );
 };

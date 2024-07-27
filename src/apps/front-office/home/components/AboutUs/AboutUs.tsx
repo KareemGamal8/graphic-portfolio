@@ -12,10 +12,10 @@ export default function AboutUs() {
       <div className="container">
         <div
           ref={aboutUsRef}
-          className={`relative ${aboutUsReview && "animate-fade-up animate-duration-[1500ms]"}`}>
+          className={`relative ${aboutUsReview && "animate-fade-right animate-duration-[1500ms]"}`}>
           <div className="flex flex-col gap-6">
-            <p className="font-edu w-fit absolute -top-2 -left-2 bg-gradient-to-tl italic from-cinder via-violet-red to-black-rose text-transparent bg-clip-text lg:text-xl text-xl font-extrabold">
-              Who I am?
+            <p className="font-edu absolute -top-2 left-0 bg-gradient-to-tl from-cinder via-violet-red to-black-rose text-transparent bg-clip-text lg:text-lg text-md font-extrabold">
+              Who am I!
             </p>
             <h3 className="text-white text-3xl font-bold">About Me</h3>
             <p className="text-white text-xl font-medium">

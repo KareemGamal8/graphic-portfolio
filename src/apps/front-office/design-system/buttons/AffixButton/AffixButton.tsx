@@ -1,5 +1,3 @@
-"use client";
-
 import { IconArrowUp } from "@tabler/icons-react";
 import { useEffect, useState } from "react";
 

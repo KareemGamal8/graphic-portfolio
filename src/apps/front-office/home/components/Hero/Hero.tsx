@@ -37,7 +37,7 @@ export default function Hero() {
           <div className="flex lg:justify-between justify-center items-center md:flex-row flex-col-reverse gap-8">
             <div
               className={`animate-fade-right animate-duration-[3000ms] animate-ease-out animate-delay-200`}>
-              <p className="font-edu absolute -top-4 -left-2 bg-gradient-to-t italic from-cinder via-violet-red to-black-rose text-transparent bg-clip-text lg:text-4xl text-2xl font-extrabold">
+              <p className="font-edu absolute -top-2 left-0 bg-gradient-to-tl from-cinder via-violet-red to-black-rose text-transparent bg-clip-text lg:text-3xl text-xl font-extrabold">
                 HI There!
               </p>
               <h2 className="lg:text-6xl md:text-4xl sm:text-4xl text-3xl font-bold uppercase lg:leading-[4.5rem]">
