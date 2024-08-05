@@ -12,20 +12,8 @@ export const linksData = [
     route: URLS.home,
   },
   {
-    text: "About Us",
-    route: URLS.aboutUs,
-  },
-  {
-    text: "Services",
-    route: URLS.services,
-  },
-  {
     text: "Portfolio",
     route: URLS.portfolio,
-  },
-  {
-    text: "Contact Us",
-    route: URLS.contactUs,
   },
 ];
 
