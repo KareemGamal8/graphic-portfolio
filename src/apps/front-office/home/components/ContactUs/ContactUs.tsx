@@ -39,8 +39,10 @@ export default function ContactUs() {
                 template_id: "template_lq5ee1s",
                 user_id: "AG_b76F_1x0ScUgac",
                 template_params: {
-                  name,
-                  email,
+                  user_name: name,
+                  user_email: email,
+                  from_name: name,
+                  from_email: email,
                   message,
                   to_name: "Hisham Ashraf",
                 },

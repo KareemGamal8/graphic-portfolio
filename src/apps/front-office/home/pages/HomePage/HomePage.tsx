@@ -1,5 +1,5 @@
 import AboutUs from "../../components/AboutUs";
-import ContactUs from "../../components/ContactUs";
+import Categories from "../../components/Categories";
 import Features from "../../components/Features";
 import Hero from "../../components/Hero";
 import Services from "../../components/Services";
@@ -12,7 +12,8 @@ export default function HomePage() {
         <AboutUs />
         <Features />
         <Services />
-        <ContactUs />
+        <Categories />
+        {/* <ContactUs /> */}
       </div>
     </>
   );

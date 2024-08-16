@@ -24,7 +24,7 @@ export default function Hero() {
             <img
               src={wave}
               alt="wave"
-              className="w-[50vw] lg:w-[65vw] hidden md:block absolute right-1/2 -bottom-12 lg:-bottom-28 [@media(min-width:2150px)]:-bottom-48 max-w-screen-2xl -translate-x-16"
+              className="w-[80vw] lg:w-[65vw] absolute right-1/2 -bottom-0 lg:-bottom-28 [@media(min-width:2150px)]:-bottom-48 max-w-screen-2xl -translate-x-16"
             />
             <img
               src={wave}

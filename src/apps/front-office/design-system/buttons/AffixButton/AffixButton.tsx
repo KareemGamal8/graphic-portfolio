@@ -22,7 +22,7 @@ export default function AffixButton() {
 
   return (
     <button
-      className={`border-4 animate-fade-left animate-duration-500 animate-ease-in-out border-violet-red fixed p-2 cursor-pointer bottom-5 right-5 z-60 w-fit rounded-full ${toTop ? "hidden" : "block"}`}
+      className={`border-4 animate-fade-left animate-duration-500 animate-ease-in-out border-violet-red fixed p-2 cursor-pointer bottom-3 right-5 z-60 w-fit rounded-full ${toTop ? "hidden" : "block"}`}
       onClick={affixScroll}>
       <IconArrowUp color="#CB1E68" />
     </button>
